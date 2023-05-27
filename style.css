@@ -107,4 +107,23 @@ button{
     max-width: 400px;
     width: 100%;
     border: none;
+
+    &:hover{
+        opacity: 0.8;
+    }
+
+    &:active{
+        opacity: 0.6;
+    }
+
+    &:disabled{
+        background-color: var(--trans3);
+        color: var(--gray);
+        cursor:default;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
 }
+

@@ -20,6 +20,7 @@
 .container{
     background-color: var(--dark1);
     padding: 30px;
+    height: 100vh;
 }
 
 .title{
@@ -45,6 +46,12 @@ main{
     margin: 20px;    
 }
 
+#alert{    
+    color: rgb(255, 30, 30);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
 p{
     color: var(--gray);
     font-size: 32px;
@@ -66,10 +73,15 @@ input{
 
 .result{
     margin: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+
+.result>div{
     background-color: var(--trans3);
     border-radius: 10px;
     padding: 10px 30px;
-    
 }
 
 h2{
@@ -103,7 +115,7 @@ button{
     cursor: pointer;
     border-radius: 20px;
     padding: 25px;
-    
+    margin: 0 10px;
     font-size: 32px;
     max-width: 400px;
     width: 100%;
